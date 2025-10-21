@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./src/images/favicon.jpg" type="image/x-icon" />
+        <title id="header-title">Uec AsistEscolar</title>
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/fontawesome.min.css"
+        />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Glider.js -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.css"
+        />
+
+        <!-- Estilos personalizados -->
+        <link rel="stylesheet" href="./src/css/estilos.min.css" />
+    </head>
+    <body>
+        <div class="bg-primary">
+            <!-- Marquee Informativo -->
+            <div class="py-2">
+                <div class="container">
+                    <div class="d-flex align-items-center">
+                        <span class="badge bg-light text-primary me-3">INFORMACIÓN</span>
+                        <marquee class="text-white"
+                            >YA PUEDES REALIZAR LA SOLICITUD DE CUPO, INGRESANDO EN EL
+                            ACCESO REPRESENTANTE Y DANDO CLIC EN SOLICITA TU
+                            CUPO.</marquee
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Superior -->
+            <header class="bg-primary py-2">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <ul class="nav gap-3 fs-8">
+                                <li class="nav-item">
+                                    <a
+                                        class="link-light text-decoration-none"
+                                        href="mailto:byc.computacionasistencia@gmail.com"
+                                    >
+                                        <i class="fas fa-envelope"></i>
+                                        byc.computacionasistencia@gmail.com
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="link-light text-decoration-none"
+                                        href="tel:+582514452591"
+                                    >
+                                        <i class="fas fa-phone"></i> +58 0251-4452591
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="text-white"
+                                        ><i class="fa fa-eye"></i> 17321</span
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <div
+                                class="d-flex align-items-center justify-content-md-end gap-3"
+                            >
+                                <div class="dropdown">
+                                    <a
+                                        class="btn btn-sm btn-outline-light dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                    >
+                                        Intranet
+                                    </a>
+                                    <ul class="dropdown-menu" style="z-index: 1200">
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="https://asistescolar.com/cae/plantel/login.php?idp=30"
+                                                target="_blank"
+                                                >Acceso Institución</a
+                                            >
+                                        </li>
+                                        <li><hr class="dropdown-divider" /></li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="https://asistescolar.com/cae/personal/login.php?idp=30"
+                                                target="_blank"
+                                                >Acceso Personal</a
+                                            >
+                                        </li>
+                                        <li><hr class="dropdown-divider" /></li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="https://asistescolar.com/cae/representante/login.php?idp=30"
+                                                target="_blank"
+                                                >Acceso Representante</a
+                                            >
+                                        </li>
+                                        <li><hr class="dropdown-divider" /></li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="https://asistescolar.com/cae/estudiante/login.php?idp=30"
+                                                target="_blank"
+                                                >Acceso Estudiante</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a
+                                    href="https://www.instagram.com/sistemas_sae/?hl=es"
+                                    class="text-white"
+                                >
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-white">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="text-white">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://es.linkedin.com/company/sae_2"
+                                    class="text-white"
+                                >
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Navbar Principal -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img
+                        src="https://asistescolar.com/cae/images/plantel/30/pw/logo_s.png"
+                        alt="Logo UEC AsistEscolar"
+                        class="me-2"
+                    />
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">Inicio</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                            >
+                                Colegio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="p.php?id=1520"
+                                        target="_blank"
+                                        >Misión y Visión</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.dropbox.com/scl/fi/szrajdhng163c4ne5svnt/561.pdf?rlkey=emixg8pw8er77j5q69ly7ww4h&dl=1"
+                                        target="_blank"
+                                        >Reseña Histórica</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="p.php?id=244"
+                                        target="_blank"
+                                        >Organigrama</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="p.php?id=245"
+                                        target="_blank"
+                                        >Normativa Interna</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="p.php?id=1522"
+                                        target="_blank"
+                                        >Valores</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                            >
+                                Publicaciones
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="public0.php"
+                                        target="_blank"
+                                        >Cartelera Informativa</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="public1.php"
+                                        target="_blank"
+                                        >Horarios Escolares</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="public2.php"
+                                        target="_blank"
+                                        >Útiles Escolares</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.php" target="_blank"
+                                >Galería</a
+                            >
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="contacto.php?nm=Contáctanos"
+                                target="_blank"
+                                >Contáctanos</a
+                            >
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                            >
+                                Niveles
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#" target="_blank"
+                                        >Primaria</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section / Carrusel -->
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active hero-section">
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-8">
+                                <h1 class="display-4 fw-bold mb-4">
+                                    Bienvenidos a UEC AsistEscolar
+                                </h1>
+                                <p class="lead mb-4">
+                                    Formando líderes del mañana con educación de calidad y
+                                    valores sólidos
+                                </p>
+                                <a
+                                    href="https://asistescolar.com/cae/representante/view/cursosc.php?idp=30"
+                                    class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold"
+                                    >Solicita tu Cupo</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="carousel-item hero-section"
+                    style="
+                        background-image: linear-gradient(
+                                rgba(0, 0, 0, 0.5),
+                                rgba(0, 0, 0, 0.5)
+                            ),
+                            url('https://asistescolar.com/cae/images/plantel/30/pw/imagen1.jpg');
+                    "
+                >
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-8">
+                                <h1 class="display-4 fw-bold mb-4">Educación Integral</h1>
+                                <p class="lead mb-4">
+                                    Desarrollamos habilidades académicas, sociales y
+                                    emocionales en nuestros estudiantes
+                                </p>
+                                <a
+                                    href="p.php?id=1520"
+                                    class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold"
+                                    >Conoce Nuestra Misión</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="carousel-item hero-section"
+                    style="
+                        background-image: linear-gradient(
+                                rgba(0, 0, 0, 0.5),
+                                rgba(0, 0, 0, 0.5)
+                            ),
+                            url('https://asistescolar.com/cae/images/plantel/30/pw/imagen3.png');
+                    "
+                >
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-8">
+                                <h1 class="display-4 fw-bold mb-4">
+                                    Comunidad Educativa
+                                </h1>
+                                <p class="lead mb-4">
+                                    Trabajamos en equipo con padres, estudiantes y
+                                    personal para lograr la excelencia educativa
+                                </p>
+                                <a
+                                    href="contacto.php?nm=Contáctanos"
+                                    class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold"
+                                    >Contáctanos</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- Sección Principal -->
+        <main class="container my-5">
+            <div class="row">
+                <!-- Contenido Principal -->
+                <div class="col-lg-8">
+                    <!-- Blog -->
+                    <section class="mb-5">
+                        <h2 class="section-title">Blog</h2>
+
+                        <div class="card mb-4">
+                            <img
+                                src="https://asistescolar.com/cae/images/plantel/30/blog/12165.png"
+                                class="card-img-top"
+                                alt="INFORMATIVO"
+                            />
+                            <div class="card-body">
+                                <div
+                                    class="d-flex justify-content-between align-items-center mb-2"
+                                >
+                                    <span class="badge bg-primary">Administración</span>
+                                    <small class="text-muted"
+                                        ><i class="far fa-calendar me-1"></i> 18 de Marzo,
+                                        2025</small
+                                    >
+                                </div>
+                                <h5 class="card-title">INFORMATIVO</h5>
+                                <p class="card-text">¡No te pierdas la oportunidad!</p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <small class="text-muted"
+                                        ><i class="fas fa-user me-1"></i> Dirección</small
+                                    >
+                                    <a
+                                        href="https://www.dropbox.com/scl/fi/yipcewl4w55f2azli3bu4/12165.xlsx?rlkey=naeo532iokbnu2hk3vdi8scil&dl=1/dn"
+                                        target="_blank"
+                                        class="btn btn-sm btn-outline-primary"
+                                        >Descargar adjunto</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <img
+                                src="https://asistescolar.com/cae/images/plantel/30/blog/10659.png"
+                                class="card-img-top"
+                                alt="Nuestros valores"
+                            />
+                            <div class="card-body">
+                                <div
+                                    class="d-flex justify-content-between align-items-center mb-2"
+                                >
+                                    <span class="badge bg-primary">Informativa</span>
+                                    <small class="text-muted"
+                                        ><i class="far fa-calendar me-1"></i> 22 de Mayo,
+                                        2024</small
+                                    >
+                                </div>
+                                <h5 class="card-title">Nuestros valores</h5>
+                                <p class="card-text">
+                                    Promover y fortalecer el sentido de pertenencia y el
+                                    amor por los valores Patrios, con la finalidad de
+                                    fomentar en los educandos la conservación y la
+                                    valoración del Patrimonio Cultural e Histórico de
+                                    nuestra amada Nación...
+                                </p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <small class="text-muted"
+                                        ><i class="fas fa-user me-1"></i> Dirección</small
+                                    >
+                                    <a href="#" class="btn btn-sm btn-outline-primary"
+                                        >Leer más</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <nav aria-label="Paginación del blog">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a
+                                            class="page-link"
+                                            href="#"
+                                            tabindex="-1"
+                                            aria-disabled="true"
+                                            >Anterior</a
+                                        >
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Siguiente</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>
+
+                    <!-- Eventos -->
+                    <section class="mb-5">
+                        <h2 class="section-title">Eventos</h2>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <img
+                                        src="https://asistescolar.com/cae/images/plantel/30/evento/1208.jpg"
+                                        class="card-img-top"
+                                        alt="BOLETA PRIMARIA"
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">BOLETA PRIMARIA</h5>
+                                        <p class="card-text">
+                                            Información de Boletín de primaria
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"
+                                            ><i class="far fa-calendar me-1"></i>
+                                            01/03/2025</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <img
+                                        src="https://asistescolar.com/cae/images/plantel/30/evento/674.png"
+                                        class="card-img-top"
+                                        alt="ANIVERSARIO DEL COLEGIO"
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            ANIVERSARIO DEL COLEGIO
+                                        </h5>
+                                        <p class="card-text">Información</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"
+                                            ><i class="far fa-calendar me-1"></i>
+                                            23/01/2025</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a href="evento.php" class="btn btn-primary">Más eventos</a>
+                        </div>
+                    </section>
+
+                    <!-- Galería -->
+                    <section class="mb-5">
+                        <h2 class="section-title">Galería de Fotos</h2>
+
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4">
+                                <div class="card">
+                                    <img
+                                        src="https://asistescolar.com/cae/images/plantel/30/galeria/1658.jpg"
+                                        class="card-img-top"
+                                        alt="PARRANDÓN NAVIDEÑO"
+                                        style="height: 150px; object-fit: cover"
+                                    />
+                                    <div class="card-body p-2 text-center">
+                                        <small class="card-text fw-bold"
+                                            >PARRANDÓN NAVIDEÑO</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card">
+                                    <img
+                                        src="https://asistescolar.com/cae/images/plantel/30/galeria/8320.jpeg"
+                                        class="card-img-top"
+                                        alt="ABRAZO EN FAMILIA"
+                                        style="height: 150px; object-fit: cover"
+                                    />
+                                    <div class="card-body p-2 text-center">
+                                        <small class="card-text fw-bold"
+                                            >ABRAZO EN FAMILIA</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card">
+                                    <img
+                                        src="https://asistescolar.com/cae/images/plantel/30/galeria/11253.png"
+                                        class="card-img-top"
+                                        alt="DÍA DE LAS MADRES"
+                                        style="height: 150px; object-fit: cover"
+                                    />
+                                    <div class="card-body p-2 text-center">
+                                        <small class="card-text fw-bold"
+                                            >DÍA DE LAS MADRES</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="galeria.php" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </section>
+
+                    <!-- Personal -->
+                    <section class="mb-5">
+                        <h2 class="section-title">Personal</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-4 text-center">
+                                <div class="team-member">
+                                    <img
+                                        src="https://asistescolar.com/cae/images/personal/9370/9370.jpg"
+                                        class="rounded-circle mb-3"
+                                        alt="AGREDA, YELITZA"
+                                    />
+                                    <h5>AGREDA, YELITZA</h5>
+                                    <p class="text-muted">DOCENTE</p>
+                                    <div class="social-links">
+                                        <a
+                                            href="https://facebook.com"
+                                            target="_blank"
+                                            class="text-primary me-2"
+                                            ><i class="fab fa-facebook"></i
+                                        ></a>
+                                        <a href="#" class="text-success"
+                                            ><i class="fab fa-whatsapp"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 text-center">
+                                <div class="team-member">
+                                    <img
+                                        src="https://asistescolar.com/cae/images/personal/9637/9637.jpg"
+                                        class="rounded-circle mb-3"
+                                        alt="RODRIGUEZ, JULIAN"
+                                    />
+                                    <h5>RODRIGUEZ, JULIAN</h5>
+                                    <p class="text-muted">DOCENTE</p>
+                                    <div class="social-links">
+                                        <a href="#" class="text-primary me-2"
+                                            ><i class="fab fa-facebook"></i
+                                        ></a>
+                                        <a href="#" class="text-success"
+                                            ><i class="fab fa-whatsapp"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 text-center">
+                                <div class="team-member">
+                                    <img
+                                        src="https://asistescolar.com/cae/images/personal/12623/12623.jpg"
+                                        class="rounded-circle mb-3"
+                                        alt="PRUEBA, ALICIA"
+                                    />
+                                    <h5>PRUEBA, ALICIA</h5>
+                                    <p class="text-muted">PROFESOR</p>
+                                    <div class="social-links">
+                                        <a href="#" class="text-primary me-2"
+                                            ><i class="fab fa-facebook"></i
+                                        ></a>
+                                        <a href="#" class="text-success"
+                                            ><i class="fab fa-whatsapp"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="personal.php" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Intranet -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Intranet</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <a
+                                        href="https://asistescolar.com/cae/plantel/login.php?idp=30"
+                                        target="_blank"
+                                        class="text-decoration-none"
+                                    >
+                                        <div class="card intranet-card text-center p-3">
+                                            <i
+                                                class="fas fa-school fa-2x text-primary mb-2"
+                                            ></i>
+                                            <p class="mb-0 fw-bold">Institución</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a
+                                        href="https://asistescolar.com/cae/personal/login.php?idp=30"
+                                        target="_blank"
+                                        class="text-decoration-none"
+                                    >
+                                        <div class="card intranet-card text-center p-3">
+                                            <i
+                                                class="fas fa-user-tie fa-2x text-primary mb-2"
+                                            ></i>
+                                            <p class="mb-0 fw-bold">Personal</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a
+                                        href="https://asistescolar.com/cae/representante/login.php?idp=30"
+                                        target="_blank"
+                                        class="text-decoration-none"
+                                    >
+                                        <div class="card intranet-card text-center p-3">
+                                            <i
+                                                class="fas fa-user-friends fa-2x text-primary mb-2"
+                                            ></i>
+                                            <p class="mb-0 fw-bold">Representante</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a
+                                        href="https://asistescolar.com/cae/estudiante/login.php?idp=30"
+                                        target="_blank"
+                                        class="text-decoration-none"
+                                    >
+                                        <div class="card intranet-card text-center p-3">
+                                            <i
+                                                class="fas fa-user-graduate fa-2x text-primary mb-2"
+                                            ></i>
+                                            <p class="mb-0 fw-bold">Estudiante</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calendario -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Calendario Escolar</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="calendar-container">
+                                <div class="calendar-header">
+                                    <h6 class="mb-0">Octubre 2025</h6>
+                                </div>
+                                <div class="calendar-body">
+                                    <div class="calendar-days">
+                                        <div class="calendar-day">L</div>
+                                        <div class="calendar-day">M</div>
+                                        <div class="calendar-day">M</div>
+                                        <div class="calendar-day">J</div>
+                                        <div class="calendar-day">V</div>
+                                        <div class="calendar-day">S</div>
+                                        <div class="calendar-day">D</div>
+                                    </div>
+                                    <div class="calendar-dates">
+                                        <!-- Días del mes (simplificado) -->
+                                        <div class="calendar-date other-month">29</div>
+                                        <div class="calendar-date other-month">30</div>
+                                        <div class="calendar-date">1</div>
+                                        <div class="calendar-date">2</div>
+                                        <div class="calendar-date">3</div>
+                                        <div class="calendar-date">4</div>
+                                        <div class="calendar-date">5</div>
+                                        <div class="calendar-date">6</div>
+                                        <div class="calendar-date">7</div>
+                                        <div class="calendar-date">8</div>
+                                        <div class="calendar-date">9</div>
+                                        <div class="calendar-date">10</div>
+                                        <div class="calendar-date">11</div>
+                                        <div class="calendar-date">12</div>
+                                        <div class="calendar-date">13</div>
+                                        <div class="calendar-date">14</div>
+                                        <div class="calendar-date">15</div>
+                                        <div class="calendar-date">16</div>
+                                        <div class="calendar-date">17</div>
+                                        <div class="calendar-date">18</div>
+                                        <div class="calendar-date">19</div>
+                                        <div class="calendar-date">20</div>
+                                        <div class="calendar-date today">21</div>
+                                        <div class="calendar-date">22</div>
+                                        <div class="calendar-date">23</div>
+                                        <div class="calendar-date">24</div>
+                                        <div class="calendar-date">25</div>
+                                        <div class="calendar-date">26</div>
+                                        <div class="calendar-date">27</div>
+                                        <div class="calendar-date">28</div>
+                                        <div class="calendar-date">29</div>
+                                        <div class="calendar-date">30</div>
+                                        <div class="calendar-date">31</div>
+                                        <div class="calendar-date other-month">1</div>
+                                        <div class="calendar-date other-month">2</div>
+                                        <div class="calendar-date other-month">3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solicitud de Constancia -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">SOLICITUD CONSTANCIA</h5>
+                        </div>
+                        <div class="card-body">
+                            <a
+                                href="https://asistescolar.com/cae/web/30/p.php?p=813"
+                                target="_blank"
+                                class="btn btn-outline-primary w-100"
+                            >
+                                <i class="fas fa-file-alt me-2"></i> CONSTANCIAS
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Administración -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">ADMINISTRACIÓN</h5>
+                        </div>
+                        <div class="card-body">
+                            <a
+                                href="https://www.bcv.org.ve/"
+                                target="_blank"
+                                class="btn btn-outline-primary w-100"
+                            >
+                                <i class="fas fa-chart-line me-2"></i> TASA DEL DÍA
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Solicitud de Cupo -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">SOLICITUD DE CUPO</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <a
+                                href="https://asistescolar.com/cae/representante/view/cursosc.php?idp=30"
+                                target="_blank"
+                            >
+                                <img
+                                    src="https://asistescolar.com/cae/images/plantel/30/cuadro/2070.png"
+                                    class="img-fluid"
+                                    alt="Solicitud de Cupo"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Publicaciones -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Publicaciones</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <a
+                                        href="https://www.dropbox.com/s/rfoli7n4zjpdmwm/cuadro2458.pdf?dl=1/dn"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="https://asistescolar.com/cae/images/plantel/30/cuadro/2458.jpg"
+                                            class="img-fluid rounded"
+                                            alt="Publicación 1"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a
+                                        href="https://www.dropbox.com/s/qdobmykwe8otlzc/cuadro2459.pdf?dl=1/dn"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="https://asistescolar.com/cae/images/plantel/30/cuadro/2459.png"
+                                            class="img-fluid rounded"
+                                            alt="Publicación 2"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Redes Sociales</h5>
+                        </div>
+                        <div class="card-body">
+                            <a
+                                href="https://www.instagram.com/sistemas_sae/?hl=es"
+                                target="_blank"
+                                class="btn btn-outline-primary w-100 mb-2"
+                            >
+                                <i class="fab fa-instagram me-2"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Enlaces -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Enlaces</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <a
+                                    href="https://www.dropbox.com/scl/fi/iz07oxxt09m79jbn9w5ln/3220.png?rlkey=ujxb36cwomt6xbhc8ys4tmlrq&dl=1/dn"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="https://asistescolar.com/cae/images/plantel/30/cuadro/3220.png"
+                                        class="img-fluid rounded"
+                                        alt="Enlace 1"
+                                    />
+                                </a>
+                            </div>
+                            <a
+                                href="https://instagram.com/"
+                                target="_blank"
+                                class="btn btn-outline-primary w-100"
+                            >
+                                <i class="fab fa-instagram me-2"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <img
+                                src="https://asistescolar.com/cae/images/plantel/30/pw/logo_i.png"
+                                alt="Logo UEC AsistEscolar"
+                                class="me-3"
+                                style="height: 60px"
+                            />
+                            <div>
+                                <h4 class="text-white mb-0">Uec AsistEscolar</h4>
+                            </div>
+                        </div>
+                        <p class="text-light mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i> calle 1 entre 4 y
+                            5. Lara
+                        </p>
+                        <p class="text-light mb-0">
+                            <i class="fas fa-phone me-2"></i> (+58) 0251-4452591
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h5 class="text-white mb-3">Enlaces Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a
+                                    href="index.php"
+                                    class="text-light text-decoration-none"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="p.php?id=1520"
+                                    class="text-light text-decoration-none"
+                                    >Misión y Visión</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="public0.php"
+                                    class="text-light text-decoration-none"
+                                    >Cartelera Informativa</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="galeria.php"
+                                    class="text-light text-decoration-none"
+                                    >Galería</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="contacto.php?nm=Contáctanos"
+                                    class="text-light text-decoration-none"
+                                    >Contáctanos</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h5 class="text-white mb-3">Síguenos</h5>
+                        <div class="d-flex mb-3">
+                            <a
+                                href="https://www.instagram.com/sistemas_sae/?hl=es"
+                                class="text-light me-3 fs-5"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-light me-3 fs-5">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="text-light me-3 fs-5">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a
+                                href="https://es.linkedin.com/company/sae_2"
+                                class="text-light fs-5"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="text-light mb-0">
+                                Uec AsistEscolar | Diseñado por
+                                <a
+                                    href="https://asistescolar.com"
+                                    target="_blank"
+                                    class="text-light fw-bold"
+                                    >AsistEscolar</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Botón de WhatsApp -->
+        <a
+            class="whatsapp-float"
+            target="_blank"
+            href="https://api.whatsapp.com/send/?phone=584245343610&text=Hola%21+Tengo+una+duda+sobre%3A+&type=phone_number&app_absent=0"
+        >
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Logica Javascript -->
+        <script src="./src/js/app.js"></script>
+        <script src="./src/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/js/all.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.js"></script>
+    </body>
+</html>
