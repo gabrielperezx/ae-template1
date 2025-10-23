@@ -1,10 +1,18 @@
-.bg-parallax {
-    --bg-image: url('./../assets/classroom+pic.jpg');
+.navbar-brand img {
+    height: 40px;
+}
 
+.bg-parallax {
     background-image: var(--bg-image);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &.bg-dark-parallax {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            var(--bg-image);
+    }
+
     &.carousel-height {
         height: 400px;
     }
@@ -170,11 +178,26 @@
     color: #adb5bd;
 }
 
-@media (max-width: 768px) {
-    .hero-section {
-        height: 50vh;
-    }
+.mission-title,
+.vision-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
 
+.mission-title::after,
+.vision-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: $primary;
+}
+
+@media (max-width: 768px) {
     .whatsapp-float {
         width: 50px;
         height: 50px;
