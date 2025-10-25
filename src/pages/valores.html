@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="../images/favicon.jpg" type="image/x-icon" />
-        <title>Uec AsistEscolar || Misión y Visión</title>
+        <title>Uec AsistEscolar || Valores</title>
 
         <!-- Font Awesome -->
         <link
@@ -24,9 +24,8 @@
         <link rel="stylesheet" href="../css/estilos.min.css" />
     </head>
     <body>
-        <!-- Header Superior -->
+        <!-- Header y Navegación (igual que en la página de inicio) -->
         <div class="bg-primary">
-            <!-- Marquee Informativo -->
             <div class="py-2">
                 <div class="container">
                     <div class="d-flex align-items-center">
@@ -146,7 +145,6 @@
             </header>
         </div>
 
-        <!-- Navbar Principal -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="#">
@@ -156,7 +154,6 @@
                         class="me-2"
                     />
                 </a>
-
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -165,13 +162,11 @@
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../index.html">Inicio</a>
+                            <a class="nav-link" href="index.php">Inicio</a>
                         </li>
-
                         <li class="nav-item dropdown">
                             <a
                                 class="nav-link dropdown-toggle"
@@ -183,7 +178,10 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#" target="_blank"
+                                    <a
+                                        class="dropdown-item"
+                                        href="./src/pages/mision-vision.html"
+                                        target="_blank"
                                         >Misión y Visión</a
                                     >
                                 </li>
@@ -200,7 +198,7 @@
                                 <li>
                                     <a
                                         class="dropdown-item"
-                                        href="./organigrama.html"
+                                        href="./src/pages/organigrama.html"
                                         target="_blank"
                                         >Organigrama</a
                                     >
@@ -209,7 +207,7 @@
                                 <li>
                                     <a
                                         class="dropdown-item"
-                                        href="p.php?id=245"
+                                        href="./src/pages/normativa.html"
                                         target="_blank"
                                         >Normativa Interna</a
                                     >
@@ -225,7 +223,6 @@
                                 </li>
                             </ul>
                         </li>
-
                         <li class="nav-item dropdown">
                             <a
                                 class="nav-link dropdown-toggle"
@@ -264,13 +261,11 @@
                                 </li>
                             </ul>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="galeria.php" target="_blank"
                                 >Galería</a
                             >
                         </li>
-
                         <li class="nav-item">
                             <a
                                 class="nav-link"
@@ -279,7 +274,6 @@
                                 >Contáctanos</a
                             >
                         </li>
-
                         <li class="nav-item dropdown">
                             <a
                                 class="nav-link dropdown-toggle"
@@ -310,64 +304,129 @@
             "
         >
             <div class="container">
-                <h1 class="display-4 fw-bold">Misión y Visión</h1>
-                <p class="lead">
-                    Conoce los principios fundamentales que guían nuestra institución
-                    educativa
-                </p>
+                <h1 class="display-4 fw-bold">Valores</h1>
+                <p class="lead">Los principios que guían nuestra institución educativa</p>
             </div>
         </div>
 
-        <!-- Contenido Principal -->
+        <!-- Contenido principal -->
         <main class="container my-5">
             <div class="row">
-                <!-- Contenido Principal -->
                 <div class="col-lg-8">
-                    <div class="bg-light p-4 shadow-lg rounded-3">
-                        <h2 class="section-title">Misión y Visión</h2>
+                    <div class="bg-white rounded-3 p-4 shadow-lg">
+                        <h2 class="section-title">Nuestros Valores Fundamentales</h2>
 
-                        <div class="mb-5">
-                            <h3 class="mission-title">Misión</h3>
-                            <p class="lead">
-                                Promover y fortalecer el sentido de pertenencia y el amor
-                                por los valores Patrios, con la finalidad de fomentar en
-                                los educandos la conservación y la valoración del
-                                Patrimonio Cultural e Histórico de nuestra amada Nación,
-                                utilizando como estrategias primordiales la oración, la
-                                lectura y la participación activa de todos los miembros de
-                                la comunidad escolar y del entorno.
-                            </p>
+                        <!-- Imagen de valores existente -->
+                        <div class="mb-5 text-center">
+                            <img
+                                src="https://asistescolar.com/cae/images/plantel/30/pagina/1522.png"
+                                class="img-thumbnail"
+                                alt="Valores de UEC AsistEscolar"
+                            />
                         </div>
 
-                        <div class="mb-5">
-                            <h3 class="vision-title">Visión</h3>
-                            <p class="lead">
-                                Dentro del marco de referencia de las ideas pedagógicas
-                                trazadas por la fundadora, quien dedicó su vida a la
-                                Educación de los más necesitados, basándose en los
-                                principios del cristianismo y el máximo respeto a los
-                                niños, adolescentes y jóvenes, todo su personal se propone
-                                un reto renovador como centro del hecho educativo a través
-                                de una pedagogía de acción y de participación constante e
-                                integración activa con la familia, escuela y comunidad.
-                            </p>
-                        </div>
-
-                        <div class="text-center mt-4">
-                            <a href="index.php" class="btn btn-primary me-3">
-                                <i class="fas fa-home me-2"></i> Volver al Inicio
-                            </a>
-                            <a
-                                href="contacto.php?nm=Contáctanos"
-                                class="btn btn-outline-primary"
-                            >
-                                <i class="fas fa-envelope me-2"></i> Contáctanos
-                            </a>
+                        <!-- Tarjetas de valores -->
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center p-4">
+                                        <div class="fs-1 text-primary text-center">
+                                            <i class="fas fa-handshake"></i>
+                                        </div>
+                                        <h4 class="card-title">Respeto</h4>
+                                        <p class="card-text">
+                                            Valoramos la dignidad de cada persona,
+                                            fomentando un ambiente de convivencia armónica
+                                            y respetuosa entre todos los miembros de
+                                            nuestra comunidad educativa.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center p-4">
+                                        <div class="fs-1 text-primary text-center">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <h4 class="card-title">Responsabilidad</h4>
+                                        <p class="card-text">
+                                            Asumimos con compromiso nuestras obligaciones,
+                                            promoviendo en nuestros estudiantes el sentido
+                                            del deber y la importancia de cumplir con sus
+                                            tareas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center p-4">
+                                        <div class="fs-1 text-primary text-center">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <h4 class="card-title">Solidaridad</h4>
+                                        <p class="card-text">
+                                            Fomentamos el apoyo mutuo y la ayuda
+                                            desinteresada, creando una comunidad donde
+                                            todos nos preocupamos por el bienestar de los
+                                            demás.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center p-4">
+                                        <div class="fs-1 text-primary text-center">
+                                            <i class="fas fa-balance-scale"></i>
+                                        </div>
+                                        <h4 class="card-title">Honestidad</h4>
+                                        <p class="card-text">
+                                            Promovemos la transparencia y la verdad en
+                                            todas nuestras acciones, formando estudiantes
+                                            íntegros que actúan con rectitud y sinceridad.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center p-4">
+                                        <div class="fs-1 text-primary text-center">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <h4 class="card-title">Trabajo en Equipo</h4>
+                                        <p class="card-text">
+                                            Valoramos la colaboración y el esfuerzo
+                                            colectivo, enseñando a nuestros estudiantes la
+                                            importancia de trabajar juntos para alcanzar
+                                            objetivos comunes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center p-4">
+                                        <div class="fs-1 text-primary text-center">
+                                            <i class="fas fa-flag"></i>
+                                        </div>
+                                        <h4 class="card-title">Patriotismo</h4>
+                                        <p class="card-text">
+                                            Inculcamos el amor por nuestra nación, sus
+                                            símbolos y tradiciones, formando ciudadanos
+                                            conscientes de su identidad y comprometidos
+                                            con el desarrollo del país.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Sidebar -->
+                <!-- Barra lateral (sidebar) -->
                 <div class="col-lg-4">
                     <!-- Intranet -->
                     <div class="card mb-4">
@@ -386,7 +445,9 @@
                                             <i
                                                 class="fas fa-school fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Institución</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Institución
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -400,7 +461,7 @@
                                             <i
                                                 class="fas fa-user-tie fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Personal</p>
+                                            <p class="card-text mb-0 fw-bold">Personal</p>
                                         </div>
                                     </a>
                                 </div>
@@ -414,7 +475,9 @@
                                             <i
                                                 class="fas fa-user-friends fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Representante</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Representante
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -428,7 +491,9 @@
                                             <i
                                                 class="fas fa-user-graduate fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Estudiante</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Estudiante
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -436,7 +501,7 @@
                         </div>
                     </div>
 
-                    <!-- Calendario -->
+                    <!-- Calendario Escolar -->
                     <div class="card mb-4">
                         <div class="card-header bg-primary text-white">
                             <h5 class="mb-0">Calendario Escolar</h5>
@@ -457,7 +522,6 @@
                                         <div class="calendar-day">D</div>
                                     </div>
                                     <div class="calendar-dates">
-                                        <!-- Días del mes (simplificado) -->
                                         <div class="calendar-date other-month">29</div>
                                         <div class="calendar-date other-month">30</div>
                                         <div class="calendar-date">1</div>
@@ -601,39 +665,11 @@
                             </a>
                         </div>
                     </div>
-
-                    <!-- Enlaces -->
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Enlaces</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <a
-                                    href="https://www.dropbox.com/scl/fi/iz07oxxt09m79jbn9w5ln/3220.png?rlkey=ujxb36cwomt6xbhc8ys4tmlrq&dl=1/dn"
-                                    target="_blank"
-                                >
-                                    <img
-                                        src="https://asistescolar.com/cae/images/plantel/30/cuadro/3220.png"
-                                        class="img-fluid rounded"
-                                        alt="Enlace 1"
-                                    />
-                                </a>
-                            </div>
-                            <a
-                                href="https://instagram.com/"
-                                target="_blank"
-                                class="btn btn-outline-primary w-100"
-                            >
-                                <i class="fab fa-instagram me-2"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </main>
 
-        <!-- Footer -->
+        <!-- Footer (igual que en la página de inicio) -->
         <footer class="bg-dark text-white py-5">
             <div class="container">
                 <div class="row">
@@ -657,7 +693,6 @@
                             <i class="fas fa-phone me-2"></i> (+58) 0251-4452591
                         </p>
                     </div>
-
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <h5 class="text-white mb-3">Enlaces Rápidos</h5>
                         <ul class="list-unstyled">
@@ -698,7 +733,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="col-lg-4">
                         <h5 class="text-white mb-3">Síguenos</h5>
                         <div class="d-flex mb-3">
@@ -721,7 +755,6 @@
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
-
                         <div class="mt-4">
                             <p class="text-light mb-0">
                                 Uec AsistEscolar | Diseñado por
