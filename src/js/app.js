@@ -70,8 +70,12 @@
     };
 
     const FilterGallery = () => {
-        const checkCalendario = document.querySelector('.filter-buttons');
-        if (document.body.contains(checkCalendario)) {
+        const filtroGaleria = document.querySelector('.filter-buttons');
+        const filtroEvento = document.querySelector('.filter-btn');
+        if (
+            document.body.contains(filtroGaleria) ||
+            document.body.contains(filtroEvento)
+        ) {
             // Filtro de galería (opcional)
             document.addEventListener('DOMContentLoaded', function () {
                 const filterButtons = document.querySelectorAll('.filter-buttons .btn');
@@ -96,6 +100,36 @@
                                 item.style.display = 'block';
                             } else {
                                 item.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            });
+
+            // Filtro de eventos (opcional)
+            document.addEventListener('DOMContentLoaded', function () {
+                const filterButtons = document.querySelectorAll('.filter-btn');
+                const eventCards = document.querySelectorAll('.event-card');
+
+                filterButtons.forEach((button) => {
+                    button.addEventListener('click', function () {
+                        // Remover clase active de todos los botones
+                        filterButtons.forEach((btn) => btn.classList.remove('active'));
+
+                        // Agregar clase active al botón clickeado
+                        this.classList.add('active');
+
+                        const filterValue = this.getAttribute('data-filter');
+
+                        // Mostrar/ocultar elementos según el filtro
+                        eventCards.forEach((card) => {
+                            if (
+                                filterValue === 'all' ||
+                                card.getAttribute('data-category') === filterValue
+                            ) {
+                                card.style.display = 'flex';
+                            } else {
+                                card.style.display = 'none';
                             }
                         });
                     });
