@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="../images/favicon.jpg" type="image/x-icon" />
-        <title>Uec AsistEscolar || Misión y Visión</title>
+        <title>Contáctanos - Uec AsistEscolar</title>
 
         <link
             rel="stylesheet"
@@ -284,10 +284,10 @@
             "
         >
             <div class="container">
-                <h1 class="display-4 fw-bold">Misión y Visión</h1>
-                <p class="lead">
-                    Conoce los principios fundamentales que guían nuestra institución
-                    educativa
+                <h1 class="display-4 fw-bold mb-3">Contáctanos</h1>
+                <p class="lead mb-0">
+                    Estamos aquí para ayudarte. Ponte en contacto con nosotros para
+                    cualquier consulta.
                 </p>
             </div>
         </div>
@@ -295,54 +295,183 @@
         <main class="container my-5">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="bg-light p-4 shadow-lg rounded-3">
-                        <h2 class="section-title">Misión y Visión</h2>
+                    <h2 class="section-title">Envía tu Mensaje</h2>
 
-                        <div class="mb-5">
-                            <h3 class="mission-title">Misión</h3>
-                            <p class="lead">
-                                Promover y fortalecer el sentido de pertenencia y el amor
-                                por los valores Patrios, con la finalidad de fomentar en
-                                los educandos la conservación y la valoración del
-                                Patrimonio Cultural e Histórico de nuestra amada Nación,
-                                utilizando como estrategias primordiales la oración, la
-                                lectura y la participación activa de todos los miembros de
-                                la comunidad escolar y del entorno.
-                            </p>
-                        </div>
-
-                        <div class="mb-5">
-                            <h3 class="vision-title">Visión</h3>
-                            <p class="lead">
-                                Dentro del marco de referencia de las ideas pedagógicas
-                                trazadas por la fundadora, quien dedicó su vida a la
-                                Educación de los más necesitados, basándose en los
-                                principios del cristianismo y el máximo respeto a los
-                                niños, adolescentes y jóvenes, todo su personal se propone
-                                un reto renovador como centro del hecho educativo a través
-                                de una pedagogía de acción y de participación constante e
-                                integración activa con la familia, escuela y comunidad.
-                            </p>
-                        </div>
-
-                        <div class="text-center mt-4">
-                            <a href="index.php" class="btn btn-primary me-3">
-                                <i class="fas fa-home me-2"></i> Volver al Inicio
-                            </a>
-                            <a
-                                href="contacto.php?nm=Contáctanos"
-                                class="btn btn-outline-primary"
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <form
+                                id="frmContacto"
+                                method="post"
+                                enctype="multipart/form-data"
                             >
-                                <i class="fas fa-envelope me-2"></i> Contáctanos
-                            </a>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="txtCampo1" class="form-label"
+                                            >Nombres y Apellidos *</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="txtCampo1"
+                                            class="form-control"
+                                            placeholder="Ingresa tus nombres y apellidos"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="txtCampo2" class="form-label"
+                                            >Correo Electrónico *</label
+                                        >
+                                        <input
+                                            type="email"
+                                            id="txtCampo2"
+                                            class="form-control"
+                                            placeholder="Ingresa tu correo electrónico"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="txtCampo3" class="form-label"
+                                            >Teléfono *</label
+                                        >
+                                        <input
+                                            type="tel"
+                                            id="txtCampo3"
+                                            class="form-control"
+                                            placeholder="Ingresa tu número de teléfono"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="txtCampo4" class="form-label"
+                                            >Asunto *</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="txtCampo4"
+                                            class="form-control"
+                                            placeholder="Ingresa el asunto de tu mensaje"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtTexto1" class="form-label"
+                                        >Mensaje *</label
+                                    >
+                                    <textarea
+                                        id="txtTexto1"
+                                        class="form-control"
+                                        rows="5"
+                                        placeholder="Escribe tu mensaje aquí..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div
+                                        class="g-recaptcha"
+                                        data-sitekey="6Lf8UloUAAAAADZE-8xGpjnJ8qrSJqiLHVhCFfcI"
+                                    ></div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <small class="text-muted"
+                                        >Debe rellenar todos los campos del formulario y
+                                        hacer clic en el botón de "Enviar Mensaje"</small
+                                    >
+                                </div>
+
+                                <div id="formNotify"></div>
+
+                                <div class="text-end">
+                                    <button
+                                        type="submit"
+                                        id="btnEnviar"
+                                        class="btn btn-primary"
+                                    >
+                                        <i class="fas fa-paper-plane me-2"></i> Enviar
+                                        Mensaje
+                                    </button>
+                                </div>
+                            </form>
                         </div>
+                    </div>
+
+                    <h2 class="section-title mt-5">Nuestra Ubicación</h2>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.400026168854!2d-69.33265868516688!3d10.066271574651498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e87671cb16cbca9%3A0xedf4bd807b12f19b!2sAsistEscolar.com!5e0!3m2!1ses!2sve!4v1645710346128!5m2!1ses!2sve"
+                            width="100%"
+                            height="400"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        >
+                        </iframe>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
+                    <h2 class="section-title">Información de Contacto</h2>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="contact-info">
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h5>Unidad Educativa Colegio AsistEscolar</h5>
+                                        <p>RIF: rr4353t454</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h5>Dirección</h5>
+                                        <p>calle 1 entre 4 y 5, Lara, Venezuela</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h5>Teléfonos</h5>
+                                        <p>(+58) 0251-4452591<br />(+58) 0251-5465465</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h5>Correo Electrónico</h5>
+                                        <p>byc.computacionasistencia@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h5>Horario de Atención</h5>
+                                        <p>Lunes a Viernes: 8:00 a.m. – 4:00 p.m.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="card mb-4">
                         <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Intranet</h5>
+                            <h5 class="mb-0">Accesos Rápidos</h5>
                         </div>
                         <div class="card-body">
                             <div class="row g-3">
@@ -356,7 +485,9 @@
                                             <i
                                                 class="fas fa-school fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Institución</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Institución
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -370,7 +501,7 @@
                                             <i
                                                 class="fas fa-user-tie fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Personal</p>
+                                            <p class="card-text mb-0 fw-bold">Personal</p>
                                         </div>
                                     </a>
                                 </div>
@@ -384,7 +515,9 @@
                                             <i
                                                 class="fas fa-user-friends fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Representante</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Representante
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -398,197 +531,13 @@
                                             <i
                                                 class="fas fa-user-graduate fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Estudiante</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Estudiante
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Calendario Escolar</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="calendar-container">
-                                <div class="calendar-header">
-                                    <h6 class="mb-0">Octubre 2025</h6>
-                                </div>
-                                <div class="calendar-body">
-                                    <div class="calendar-days">
-                                        <div class="calendar-day">L</div>
-                                        <div class="calendar-day">M</div>
-                                        <div class="calendar-day">M</div>
-                                        <div class="calendar-day">J</div>
-                                        <div class="calendar-day">V</div>
-                                        <div class="calendar-day">S</div>
-                                        <div class="calendar-day">D</div>
-                                    </div>
-                                    <div class="calendar-dates">
-                                        <div class="calendar-date other-month">29</div>
-                                        <div class="calendar-date other-month">30</div>
-                                        <div class="calendar-date">1</div>
-                                        <div class="calendar-date">2</div>
-                                        <div class="calendar-date">3</div>
-                                        <div class="calendar-date">4</div>
-                                        <div class="calendar-date">5</div>
-                                        <div class="calendar-date">6</div>
-                                        <div class="calendar-date">7</div>
-                                        <div class="calendar-date">8</div>
-                                        <div class="calendar-date">9</div>
-                                        <div class="calendar-date">10</div>
-                                        <div class="calendar-date">11</div>
-                                        <div class="calendar-date">12</div>
-                                        <div class="calendar-date">13</div>
-                                        <div class="calendar-date">14</div>
-                                        <div class="calendar-date">15</div>
-                                        <div class="calendar-date">16</div>
-                                        <div class="calendar-date">17</div>
-                                        <div class="calendar-date">18</div>
-                                        <div class="calendar-date">19</div>
-                                        <div class="calendar-date">20</div>
-                                        <div class="calendar-date today">21</div>
-                                        <div class="calendar-date">22</div>
-                                        <div class="calendar-date">23</div>
-                                        <div class="calendar-date">24</div>
-                                        <div class="calendar-date">25</div>
-                                        <div class="calendar-date">26</div>
-                                        <div class="calendar-date">27</div>
-                                        <div class="calendar-date">28</div>
-                                        <div class="calendar-date">29</div>
-                                        <div class="calendar-date">30</div>
-                                        <div class="calendar-date">31</div>
-                                        <div class="calendar-date other-month">1</div>
-                                        <div class="calendar-date other-month">2</div>
-                                        <div class="calendar-date other-month">3</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">SOLICITUD CONSTANCIA</h5>
-                        </div>
-                        <div class="card-body">
-                            <a
-                                href="https://asistescolar.com/cae/web/30/p.php?p=813"
-                                target="_blank"
-                                class="btn btn-outline-primary w-100"
-                            >
-                                <i class="fas fa-file-alt me-2"></i> CONSTANCIAS
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">ADMINISTRACIÓN</h5>
-                        </div>
-                        <div class="card-body">
-                            <a
-                                href="https://www.bcv.org.ve/"
-                                target="_blank"
-                                class="btn btn-outline-primary w-100"
-                            >
-                                <i class="fas fa-chart-line me-2"></i> TASA DEL DÍA
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">SOLICITUD DE CUPO</h5>
-                        </div>
-                        <div class="card-body text-center">
-                            <a
-                                href="https://asistescolar.com/cae/representante/view/cursosc.php?idp=30"
-                                target="_blank"
-                            >
-                                <img
-                                    src="https://asistescolar.com/cae/images/plantel/30/cuadro/2070.png"
-                                    class="img-fluid"
-                                    alt="Solicitud de Cupo"
-                                />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Publicaciones</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <a
-                                        href="https://www.dropbox.com/s/rfoli7n4zjpdmwm/cuadro2458.pdf?dl=1/dn"
-                                        target="_blank"
-                                    >
-                                        <img
-                                            src="https://asistescolar.com/cae/images/plantel/30/cuadro/2458.jpg"
-                                            class="img-fluid rounded"
-                                            alt="Publicación 1"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="col-12">
-                                    <a
-                                        href="https://www.dropbox.com/s/qdobmykwe8otlzc/cuadro2459.pdf?dl=1/dn"
-                                        target="_blank"
-                                    >
-                                        <img
-                                            src="https://asistescolar.com/cae/images/plantel/30/cuadro/2459.png"
-                                            class="img-fluid rounded"
-                                            alt="Publicación 2"
-                                        />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Redes Sociales</h5>
-                        </div>
-                        <div class="card-body">
-                            <a
-                                href="https://www.instagram.com/sistemas_sae/?hl=es"
-                                target="_blank"
-                                class="btn btn-outline-primary w-100 mb-2"
-                            >
-                                <i class="fab fa-instagram me-2"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Enlaces</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <a
-                                    href="https://www.dropbox.com/scl/fi/iz07oxxt09m79jbn9w5ln/3220.png?rlkey=ujxb36cwomt6xbhc8ys4tmlrq&dl=1/dn"
-                                    target="_blank"
-                                >
-                                    <img
-                                        src="https://asistescolar.com/cae/images/plantel/30/cuadro/3220.png"
-                                        class="img-fluid rounded"
-                                        alt="Enlace 1"
-                                    />
-                                </a>
-                            </div>
-                            <a
-                                href="https://instagram.com/"
-                                target="_blank"
-                                class="btn btn-outline-primary w-100"
-                            >
-                                <i class="fab fa-instagram me-2"></i> Instagram
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -618,7 +567,6 @@
                             <i class="fas fa-phone me-2"></i> (+58) 0251-4452591
                         </p>
                     </div>
-
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <h5 class="text-white mb-3">Enlaces Rápidos</h5>
                         <ul class="list-unstyled">
@@ -659,7 +607,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="col-lg-4">
                         <h5 class="text-white mb-3">Síguenos</h5>
                         <div class="d-flex mb-3">
@@ -682,7 +629,6 @@
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
-
                         <div class="mt-4">
                             <p class="text-light mb-0">
                                 Uec AsistEscolar | Diseñado por
@@ -710,5 +656,6 @@
         <script src="../js/app.js"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/js/all.min.js"></script>
+        <script async src="https://www.google.com/recaptcha/api.js"></script>
     </body>
 </html>

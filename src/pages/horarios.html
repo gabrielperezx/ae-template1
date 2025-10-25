@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="../images/favicon.jpg" type="image/x-icon" />
-        <title>Uec AsistEscolar || Misión y Visión</title>
+        <title>Uec AsistEscolar || Horarios Escolares</title>
 
         <link
             rel="stylesheet"
@@ -34,7 +34,6 @@
                     </div>
                 </div>
             </div>
-
             <header class="bg-primary py-2">
                 <div class="container">
                     <div class="row align-items-center">
@@ -78,7 +77,9 @@
                                         Intranet
                                     </a>
                                     <ul class="dropdown-menu" style="z-index: 1200">
-                                        <li>
+                                        <li
+                                            class="list-group-item list-group-item-action"
+                                        >
                                             <a
                                                 class="dropdown-item"
                                                 href="https://asistescolar.com/cae/plantel/login.php?idp=30"
@@ -86,8 +87,14 @@
                                                 >Acceso Institución</a
                                             >
                                         </li>
-                                        <li><hr class="dropdown-divider" /></li>
-                                        <li>
+                                        <li
+                                            class="list-group-item list-group-item-action"
+                                        >
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li
+                                            class="list-group-item list-group-item-action"
+                                        >
                                             <a
                                                 class="dropdown-item"
                                                 href="https://asistescolar.com/cae/personal/login.php?idp=30"
@@ -95,8 +102,14 @@
                                                 >Acceso Personal</a
                                             >
                                         </li>
-                                        <li><hr class="dropdown-divider" /></li>
-                                        <li>
+                                        <li
+                                            class="list-group-item list-group-item-action"
+                                        >
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li
+                                            class="list-group-item list-group-item-action"
+                                        >
                                             <a
                                                 class="dropdown-item"
                                                 href="https://asistescolar.com/cae/representante/login.php?idp=30"
@@ -104,8 +117,14 @@
                                                 >Acceso Representante</a
                                             >
                                         </li>
-                                        <li><hr class="dropdown-divider" /></li>
-                                        <li>
+                                        <li
+                                            class="list-group-item list-group-item-action"
+                                        >
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li
+                                            class="list-group-item list-group-item-action"
+                                        >
                                             <a
                                                 class="dropdown-item"
                                                 href="https://asistescolar.com/cae/estudiante/login.php?idp=30"
@@ -284,10 +303,9 @@
             "
         >
             <div class="container">
-                <h1 class="display-4 fw-bold">Misión y Visión</h1>
+                <h1 class="display-4 fw-bold">Horarios Escolares</h1>
                 <p class="lead">
-                    Conoce los principios fundamentales que guían nuestra institución
-                    educativa
+                    Consulta los horarios de todos los grados de nuestra institución
                 </p>
             </div>
         </div>
@@ -295,48 +313,200 @@
         <main class="container my-5">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="bg-light p-4 shadow-lg rounded-3">
-                        <h2 class="section-title">Misión y Visión</h2>
+                    <section class="mb-5">
+                        <h2 class="section-title">Horarios por Nivel Educativo</h2>
 
-                        <div class="mb-5">
-                            <h3 class="mission-title">Misión</h3>
-                            <p class="lead">
-                                Promover y fortalecer el sentido de pertenencia y el amor
-                                por los valores Patrios, con la finalidad de fomentar en
-                                los educandos la conservación y la valoración del
-                                Patrimonio Cultural e Histórico de nuestra amada Nación,
-                                utilizando como estrategias primordiales la oración, la
-                                lectura y la participación activa de todos los miembros de
-                                la comunidad escolar y del entorno.
-                            </p>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    En esta sección encontrarás los horarios escolares
+                                    organizados por nivel educativo y grado. Haz clic en
+                                    cada nivel para ver los horarios disponibles.
+                                </p>
+                            </div>
                         </div>
 
-                        <div class="mb-5">
-                            <h3 class="vision-title">Visión</h3>
-                            <p class="lead">
-                                Dentro del marco de referencia de las ideas pedagógicas
-                                trazadas por la fundadora, quien dedicó su vida a la
-                                Educación de los más necesitados, basándose en los
-                                principios del cristianismo y el máximo respeto a los
-                                niños, adolescentes y jóvenes, todo su personal se propone
-                                un reto renovador como centro del hecho educativo a través
-                                de una pedagogía de acción y de participación constante e
-                                integración activa con la familia, escuela y comunidad.
-                            </p>
-                        </div>
+                        <div class="accordion" id="schedulesAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingPrimary">
+                                    <button
+                                        class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapsePrimary"
+                                        aria-expanded="true"
+                                        aria-controls="collapsePrimary"
+                                    >
+                                        <i class="fas fa-graduation-cap me-2"></i>
+                                        EDUCACIÓN PRIMARIA
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapsePrimary"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingPrimary"
+                                    data-bs-parent="#schedulesAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <a
+                                                class="list-group-item list-group-item-action"
+                                                href="https://www.dropbox.com/scl/fi/23m9jf0c1spgnx6ijyyjv/1455.pdf?rlkey=r6f2awlzi5ebls7i74zh8wuwi&dl=1/dn"
+                                                target="_blank"
+                                            >
+                                                <i
+                                                    class="fas fa-file-pdf text-primary"
+                                                ></i>
+                                                1ER GRADO
+                                            </a>
 
-                        <div class="text-center mt-4">
-                            <a href="index.php" class="btn btn-primary me-3">
-                                <i class="fas fa-home me-2"></i> Volver al Inicio
-                            </a>
-                            <a
-                                href="contacto.php?nm=Contáctanos"
-                                class="btn btn-outline-primary"
-                            >
-                                <i class="fas fa-envelope me-2"></i> Contáctanos
-                            </a>
+                                            <a
+                                                class="list-group-item list-group-item-action"
+                                                href="https://www.dropbox.com/scl/fi/145b1f0sykcy1x7kz3gb3/1456-1.pdf?rlkey=30fhj6v0h66kjd49nt9vbqy7u&dl=1/dn"
+                                                target="_blank"
+                                            >
+                                                <i
+                                                    class="fas fa-file-pdf text-primary"
+                                                ></i>
+                                                2DO GRADO
+                                            </a>
+
+                                            <a
+                                                class="list-group-item list-group-item-action"
+                                                href="https://www.dropbox.com/scl/fi/el9j7jwid66ad7epfgf99/1458.pdf?rlkey=71t7tiaw9ehf0fvhwqjpww8mq&dl=1/dn"
+                                                target="_blank"
+                                            >
+                                                <i
+                                                    class="fas fa-file-pdf text-primary"
+                                                ></i>
+                                                3ER GRADO
+                                            </a>
+
+                                            <a
+                                                class="list-group-item list-group-item-action"
+                                                href="https://www.dropbox.com/scl/fi/jlj5b8qc8ooo7q1wufrbp/3166-1.pdf?rlkey=5m8rqox2golcbbwgrsae5158q&dl=1/dn"
+                                                target="_blank"
+                                            >
+                                                <i
+                                                    class="fas fa-file-pdf text-primary"
+                                                ></i>
+                                                4TO GRADO
+                                            </a>
+
+                                            <a
+                                                class="list-group-item list-group-item-action"
+                                                href="https://www.dropbox.com/scl/fi/rzddvykd4x4dr1w3p8zqc/3506.pdf?rlkey=m4nz51fs8phbyg5wvoskjft0r&dl=1/dn"
+                                                target="_blank"
+                                            >
+                                                <i
+                                                    class="fas fa-file-pdf text-primary"
+                                                ></i>
+                                                5TO GRADO
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSecondary">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSecondary"
+                                        aria-expanded="false"
+                                        aria-controls="collapseSecondary"
+                                    >
+                                        <i class="fas fa-university me-2"></i> EDUCACIÓN
+                                        MEDIA GENERAL
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseSecondary"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingSecondary"
+                                    data-bs-parent="#schedulesAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <a
+                                                class="list-group-item list-group-item-action"
+                                                href="https://www.dropbox.com/s/wc1l21966ob0yly/3160.jpg?dl=1/dn"
+                                                target="_blank"
+                                            >
+                                                <i
+                                                    class="fas fa-file-pdf text-primary"
+                                                ></i>
+                                                Horario I
+                                            </a>
+
+                                            <a
+                                                class="list-group-item list-group-item-action"
+                                                href="https://www.dropbox.com/s/b2j9b05cn8lrqcs/3163.pdf?dl=1/dn"
+                                                target="_blank"
+                                            >
+                                                <i
+                                                    class="fas fa-file-pdf text-primary"
+                                                ></i>
+                                                Horario IV
+                                            </a>
+
+                                            <a
+                                                class="list-group-item list-group-item-action"
+                                                href="https://www.dropbox.com/s/fqn40oj3rtx34yx/3164.pdf?dl=1/dn"
+                                                target="_blank"
+                                            >
+                                                <i
+                                                    class="fas fa-file-pdf text-primary"
+                                                ></i>
+                                                Horario V
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-info-circle me-2"></i> Información
+                                    Importante
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <i class="fas fa-clock text-primary me-2"></i> Los
+                                        horarios están sujetos a cambios según
+                                        disposiciones de la institución.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i
+                                            class="fas fa-exclamation-triangle text-warning me-2"
+                                        ></i>
+                                        En caso de cambios, se notificará a través de los
+                                        canales oficiales.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-download text-success me-2"></i>
+                                        Puedes descargar los horarios para consultarlos
+                                        offline.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i
+                                            class="fas fa-question-circle text-info me-2"
+                                        ></i>
+                                        Si tienes dudas sobre algún horario, contacta con
+                                        la administración.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </div>
 
                 <div class="col-lg-4">
@@ -356,7 +526,9 @@
                                             <i
                                                 class="fas fa-school fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Institución</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Institución
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -370,7 +542,7 @@
                                             <i
                                                 class="fas fa-user-tie fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Personal</p>
+                                            <p class="card-text mb-0 fw-bold">Personal</p>
                                         </div>
                                     </a>
                                 </div>
@@ -384,7 +556,9 @@
                                             <i
                                                 class="fas fa-user-friends fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Representante</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Representante
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -398,7 +572,9 @@
                                             <i
                                                 class="fas fa-user-graduate fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Estudiante</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Estudiante
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -564,33 +740,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Enlaces</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <a
-                                    href="https://www.dropbox.com/scl/fi/iz07oxxt09m79jbn9w5ln/3220.png?rlkey=ujxb36cwomt6xbhc8ys4tmlrq&dl=1/dn"
-                                    target="_blank"
-                                >
-                                    <img
-                                        src="https://asistescolar.com/cae/images/plantel/30/cuadro/3220.png"
-                                        class="img-fluid rounded"
-                                        alt="Enlace 1"
-                                    />
-                                </a>
-                            </div>
-                            <a
-                                href="https://instagram.com/"
-                                target="_blank"
-                                class="btn btn-outline-primary w-100"
-                            >
-                                <i class="fab fa-instagram me-2"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </main>
@@ -618,7 +767,6 @@
                             <i class="fas fa-phone me-2"></i> (+58) 0251-4452591
                         </p>
                     </div>
-
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <h5 class="text-white mb-3">Enlaces Rápidos</h5>
                         <ul class="list-unstyled">
@@ -659,7 +807,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="col-lg-4">
                         <h5 class="text-white mb-3">Síguenos</h5>
                         <div class="d-flex mb-3">
@@ -682,7 +829,6 @@
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
-
                         <div class="mt-4">
                             <p class="text-light mb-0">
                                 Uec AsistEscolar | Diseñado por

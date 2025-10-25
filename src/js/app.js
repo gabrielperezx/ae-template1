@@ -69,6 +69,41 @@
         });
     };
 
+    const FilterGallery = () => {
+        const checkCalendario = document.querySelector('.filter-buttons');
+        if (document.body.contains(checkCalendario)) {
+            // Filtro de galería (opcional)
+            document.addEventListener('DOMContentLoaded', function () {
+                const filterButtons = document.querySelectorAll('.filter-buttons .btn');
+                const galleryItems = document.querySelectorAll('#gallery-grid .col-md-6');
+
+                filterButtons.forEach((button) => {
+                    button.addEventListener('click', function () {
+                        // Remover clase active de todos los botones
+                        filterButtons.forEach((btn) => btn.classList.remove('active'));
+
+                        // Agregar clase active al botón clickeado
+                        this.classList.add('active');
+
+                        const filterValue = this.getAttribute('data-filter');
+
+                        // Mostrar/ocultar elementos según el filtro
+                        galleryItems.forEach((item) => {
+                            if (
+                                filterValue === 'all' ||
+                                item.getAttribute('data-category') === filterValue
+                            ) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            });
+        }
+    };
+
     /*----- ----- ----- ----- -----
 	# Declaraciones
 	----- ----- ----- ----- -----*/
@@ -77,4 +112,5 @@
         Tooltips();
         GliderCreator();
     });
+    FilterGallery();
 })();

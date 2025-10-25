@@ -4,11 +4,16 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="../images/favicon.jpg" type="image/x-icon" />
-        <title>Uec AsistEscolar || Misión y Visión</title>
+        <title>Galería de Fotos - Uec AsistEscolar</title>
 
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/fontawesome.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.css"
         />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -284,58 +289,123 @@
             "
         >
             <div class="container">
-                <h1 class="display-4 fw-bold">Misión y Visión</h1>
-                <p class="lead">
-                    Conoce los principios fundamentales que guían nuestra institución
-                    educativa
-                </p>
+                <h1 class="display-4 fw-bold">Galería de Fotos</h1>
             </div>
         </div>
 
         <main class="container my-5">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="bg-light p-4 shadow-lg rounded-3">
-                        <h2 class="section-title">Misión y Visión</h2>
+                    <div class="filter-buttons">
+                        <button class="btn btn-outline-primary active" data-filter="all">
+                            Todas
+                        </button>
+                        <button class="btn btn-outline-primary" data-filter="eventos">
+                            Eventos
+                        </button>
+                        <button class="btn btn-outline-primary" data-filter="actividades">
+                            Actividades
+                        </button>
+                        <button
+                            class="btn btn-outline-primary"
+                            data-filter="celebraciones"
+                        >
+                            Celebraciones
+                        </button>
+                    </div>
 
-                        <div class="mb-5">
-                            <h3 class="mission-title">Misión</h3>
-                            <p class="lead">
-                                Promover y fortalecer el sentido de pertenencia y el amor
-                                por los valores Patrios, con la finalidad de fomentar en
-                                los educandos la conservación y la valoración del
-                                Patrimonio Cultural e Histórico de nuestra amada Nación,
-                                utilizando como estrategias primordiales la oración, la
-                                lectura y la participación activa de todos los miembros de
-                                la comunidad escolar y del entorno.
-                            </p>
+                    <div class="row" id="gallery-grid">
+                        <div class="col-md-6 col-lg-4" data-category="eventos">
+                            <div class="gallery-item">
+                                <img
+                                    src="https://asistescolar.com/cae/images/plantel/30/galeria/1655.jpg"
+                                    alt="BATALLA DE CARABOBO"
+                                />
+                                <div class="gallery-caption">
+                                    <h5 class="mb-0">BATALLA DE CARABOBO</h5>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-md-6 col-lg-4" data-category="celebraciones">
+                            <div class="gallery-item">
+                                <img
+                                    src="https://asistescolar.com/cae/images/plantel/30/galeria/11253.png"
+                                    alt="DÍA DE LAS MADRES"
+                                />
+                                <div class="gallery-caption">
+                                    <h5 class="mb-0">DÍA DE LAS MADRES</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-category="actividades">
+                            <div class="gallery-item">
+                                <img
+                                    src="https://asistescolar.com/cae/images/plantel/30/galeria/8320.jpeg"
+                                    alt="ABRAZO EN FAMILIA"
+                                />
+                                <div class="gallery-caption">
+                                    <h5 class="mb-0">ABRAZO EN FAMILIA</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-category="celebraciones">
+                            <div class="gallery-item">
+                                <img
+                                    src="https://asistescolar.com/cae/images/plantel/30/galeria/1658.jpg"
+                                    alt="PARRANDÓN NAVIDEÑO"
+                                />
+                                <div class="gallery-caption">
+                                    <h5 class="mb-0">PARRANDÓN NAVIDEÑO</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-category="actividades">
+                            <div class="gallery-item">
+                                <img
+                                    src="https://asistescolar.com/cae/images/plantel/30/galeria/6501.jfif"
+                                    alt="Coronación de la virgen"
+                                />
+                                <div class="gallery-caption">
+                                    <h5 class="mb-0">Coronación de la virgen</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-category="eventos">
+                            <div class="gallery-item">
+                                <img
+                                    src="https://asistescolar.com/cae/images/plantel/30/galeria/8321.jpeg"
+                                    alt="PRUEBA"
+                                />
+                                <div class="gallery-caption">
+                                    <h5 class="mb-0">PRUEBA</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="mb-5">
-                            <h3 class="vision-title">Visión</h3>
-                            <p class="lead">
-                                Dentro del marco de referencia de las ideas pedagógicas
-                                trazadas por la fundadora, quien dedicó su vida a la
-                                Educación de los más necesitados, basándose en los
-                                principios del cristianismo y el máximo respeto a los
-                                niños, adolescentes y jóvenes, todo su personal se propone
-                                un reto renovador como centro del hecho educativo a través
-                                de una pedagogía de acción y de participación constante e
-                                integración activa con la familia, escuela y comunidad.
-                            </p>
-                        </div>
-
-                        <div class="text-center mt-4">
-                            <a href="index.php" class="btn btn-primary me-3">
-                                <i class="fas fa-home me-2"></i> Volver al Inicio
-                            </a>
-                            <a
-                                href="contacto.php?nm=Contáctanos"
-                                class="btn btn-outline-primary"
-                            >
-                                <i class="fas fa-envelope me-2"></i> Contáctanos
-                            </a>
-                        </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <nav aria-label="Paginación de la galería">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a
+                                        class="page-link"
+                                        href="#"
+                                        tabindex="-1"
+                                        aria-disabled="true"
+                                        >Anterior</a
+                                    >
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Siguiente</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
 
@@ -356,7 +426,9 @@
                                             <i
                                                 class="fas fa-school fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Institución</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Institución
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -370,7 +442,7 @@
                                             <i
                                                 class="fas fa-user-tie fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Personal</p>
+                                            <p class="card-text mb-0 fw-bold">Personal</p>
                                         </div>
                                     </a>
                                 </div>
@@ -384,7 +456,9 @@
                                             <i
                                                 class="fas fa-user-friends fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Representante</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Representante
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -398,7 +472,9 @@
                                             <i
                                                 class="fas fa-user-graduate fa-2x text-primary mb-2"
                                             ></i>
-                                            <p class="mb-0 fw-bold">Estudiante</p>
+                                            <p class="card-text mb-0 fw-bold">
+                                                Estudiante
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -564,33 +640,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Enlaces</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <a
-                                    href="https://www.dropbox.com/scl/fi/iz07oxxt09m79jbn9w5ln/3220.png?rlkey=ujxb36cwomt6xbhc8ys4tmlrq&dl=1/dn"
-                                    target="_blank"
-                                >
-                                    <img
-                                        src="https://asistescolar.com/cae/images/plantel/30/cuadro/3220.png"
-                                        class="img-fluid rounded"
-                                        alt="Enlace 1"
-                                    />
-                                </a>
-                            </div>
-                            <a
-                                href="https://instagram.com/"
-                                target="_blank"
-                                class="btn btn-outline-primary w-100"
-                            >
-                                <i class="fab fa-instagram me-2"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </main>
@@ -618,7 +667,6 @@
                             <i class="fas fa-phone me-2"></i> (+58) 0251-4452591
                         </p>
                     </div>
-
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <h5 class="text-white mb-3">Enlaces Rápidos</h5>
                         <ul class="list-unstyled">
@@ -659,7 +707,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="col-lg-4">
                         <h5 class="text-white mb-3">Síguenos</h5>
                         <div class="d-flex mb-3">
@@ -682,7 +729,6 @@
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
-
                         <div class="mt-4">
                             <p class="text-light mb-0">
                                 Uec AsistEscolar | Diseñado por
