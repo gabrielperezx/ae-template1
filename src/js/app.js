@@ -71,7 +71,7 @@
             // Auto-desplazamiento cada 5 segundos
             let autoplay = setInterval(() => {
                 glider.scrollItem('next');
-            }, 5000);
+            }, 4000);
 
             // Pausar autoplay al interactuar
             container.addEventListener('mouseenter', () => {
@@ -82,7 +82,7 @@
             container.addEventListener('mouseleave', () => {
                 autoplay = setInterval(() => {
                     glider.scrollItem('next');
-                }, 5000);
+                }, 4000);
             });
         });
     };
