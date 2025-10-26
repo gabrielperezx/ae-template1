@@ -17,8 +17,8 @@
         const gliderConfig3Slides = {
             slidesToShow: 1,
             slidesToScroll: 1,
-            scrollLock: true,
-
+            draggable: true,
+            rewind: true, // Añade rewind para que vuelva al inicio
             responsive: [
                 {
                     breakpoint: 769,
@@ -33,7 +33,8 @@
         const gliderConfig1SlidesBase = {
             slidesToShow: 1,
             slidesToScroll: 1,
-            scrollLock: true,
+            draggable: true,
+            rewind: true, // Añade rewind para que vuelva al inicio
         };
 
         document.querySelectorAll('.carousel__items').forEach((carousel) => {
@@ -58,13 +59,30 @@
             const nextButton = container.querySelector('.carousel__siguiente');
             const dots = container.querySelector('.carousel__indicadores');
 
-            new Glider(carousel, {
+            const glider = new Glider(carousel, {
                 ...gliderConfig1SlidesBase,
                 arrows: {
                     prev: prevButton,
                     next: nextButton,
                 },
                 dots: dots,
+            });
+
+            // Auto-desplazamiento cada 5 segundos
+            let autoplay = setInterval(() => {
+                glider.scrollItem('next');
+            }, 5000);
+
+            // Pausar autoplay al interactuar
+            container.addEventListener('mouseenter', () => {
+                clearInterval(autoplay);
+            });
+
+            // Reanudar autoplay al dejar de interactuar
+            container.addEventListener('mouseleave', () => {
+                autoplay = setInterval(() => {
+                    glider.scrollItem('next');
+                }, 5000);
             });
         });
     };
