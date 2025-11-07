@@ -276,22 +276,26 @@
 
             <h2 class="section-title">Imágenes</h2>
 
-            <div class="row" id="lightgallery">
+            <div class="row gallery">
                 <div class="col-md-4">
                     <div class="gallery-item">
                         <img
                             src="https://asistescolar.com/cae/images/plantel/30/galeria/1655.jpg"
                             alt="BATALLA DE CARABOBO"
-                            class="gallery-image"
+                            class="gallery-item-image"
                         />
-                        <div class="gallery-overlay">
-                            <div class="gallery-overlay-content">
-                                <h5>BATALLA DE CARABOBO</h5>
-                                <p class="mb-0">Imagen 1</p>
+                        <div
+                            class="gallery-item__overlay"
+                            data-bs-toggle="modal"
+                            data-bs-target="#lightboxModal"
+                        >
+                            <div class="gallery-item__zoom-icon">
+                                <i class="fas fa-search-plus"></i>
                             </div>
-                        </div>
-                        <div class="zoom-icon">
-                            <i class="fas fa-search-plus"></i>
+                            <div class="gallery-item__overlay-content">
+                                <h5>BATALLA DE CARABOBO</h5>
+                                <p>Imagen 1</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -300,16 +304,23 @@
                         <img
                             src="https://asistescolar.com/cae/images/plantel/30/galeria/6550.jpg"
                             alt="BATALLA DE CARABOBO"
-                            class="gallery-image"
+                            class="gallery-item-image"
+                            data-bs-toggle="modal"
+                            data-bs-target="#lightboxModal"
                         />
-                        <div class="gallery-overlay">
-                            <div class="gallery-overlay-content">
-                                <h5>BATALLA DE CARABOBO</h5>
-                                <p class="mb-0">Imagen 2</p>
+                        <div
+                            class="gallery-item__overlay"
+                            data-bs-toggle="modal"
+                            data-bs-target="#lightboxModal"
+                            data-image-src="https://asistescolar.com/cae/images/plantel/30/galeria/6550.jpg"
+                        >
+                            <div class="gallery-item__zoom-icon">
+                                <i class="fas fa-search-plus"></i>
                             </div>
-                        </div>
-                        <div class="zoom-icon">
-                            <i class="fas fa-search-plus"></i>
+                            <div class="gallery-item__overlay-content">
+                                <h5>BATALLA DE CARABOBO</h5>
+                                <p>Imagen 2</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -432,6 +443,51 @@
         <button class="button-float btn-scroll-top" title="Go to top">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
+
+        <div
+            class="modal fade"
+            id="lightboxModal"
+            tabindex="-1"
+            aria-labelledby="lightboxLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img
+                            id="lightboxImage"
+                            src=""
+                            class="modal__imagen"
+                            alt="Lightbox Image"
+                        />
+                        <div class="modal__botones">
+                            <button
+                                type="button"
+                                class="modal__anterior"
+                                role="button"
+                                id="prevBtn"
+                            >
+                                <i
+                                    class="fa-solid fa-chevron-left"
+                                    aria-hidden="true"
+                                ></i>
+                            </button>
+                            <button
+                                type="button"
+                                class="modal__siguiente"
+                                role="button"
+                                id="nextBtn"
+                            >
+                                <i
+                                    class="fa-solid fa-chevron-right"
+                                    aria-hidden="true"
+                                ></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="../js/app.js"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>

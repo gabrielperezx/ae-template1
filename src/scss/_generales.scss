@@ -1,3 +1,16 @@
+.image-expand {
+    transition: ease all 0.3s;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.card-button-image {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
 .navbar-brand img {
     height: 40px;
 }
@@ -256,8 +269,8 @@
 
         &:hover,
         &.active {
-            background-color: $primary;
-            color: $white;
+            background-color: $primary !important;
+            color: $white !important;
         }
 
         &.inactive {
@@ -389,10 +402,6 @@
     transform: translateY(0);
 }
 
-.filter-buttons {
-    margin-bottom: 30px;
-}
-
 .map-container {
     border-radius: 10px;
     overflow: hidden;
@@ -450,6 +459,36 @@
     transform: translateX(-5px);
 }
 
+.modal {
+    &__imagen {
+        width: 100%;
+    }
+    &__botones {
+        z-index: -1;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: -4rem;
+        right: -4rem;
+        bottom: 50%;
+        justify-content: space-between;
+    }
+    &__anterior,
+    &__siguiente {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        border: 2px solid $warning;
+        text-align: center;
+        background-color: $white;
+        color: $primary;
+        border-radius: 50rem;
+    }
+}
+
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -457,68 +496,56 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.05);
-}
-
-.gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-    display: flex;
-    align-items: flex-end;
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
-}
-
-.gallery-overlay-content {
-    color: white;
-    width: 100%;
+    &:hover {
+        transform: translateY(-5px);
+        .gallery-item__overlay {
+            opacity: 1;
+        }
+    }
+    .gallery-item-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+    }
+    &__zoom-icon {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+    }
+    &__overlay-content {
+        color: white;
+        width: 100%;
+        h5,
+        p {
+            margin: 0;
+        }
+    }
 }
 
 .gallery-overlay-content h5 {
     margin-bottom: 5px;
-}
-
-.zoom-icon {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .zoom-icon {
-    opacity: 1;
 }
 
 .email-fix {
@@ -703,5 +730,25 @@
     .contact-info-icon {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .modal {
+        &__imagen {
+            width: 100%;
+        }
+        &__botones {
+            z-index: 1;
+            position: static;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 1rem 1rem 0 1rem;
+        }
+        &__anterior,
+        &__siguiente {
+            width: 2rem;
+            height: 2rem;
+            font-size: 1rem;
+        }
     }
 }

@@ -3,16 +3,6 @@
 	# Funciones
 	----- ----- ----- ----- -----*/
 
-    const Tooltips = () => {
-        // Inicializar tooltips
-        var tooltipTriggerList = [].slice.call(
-            document.querySelectorAll('[data-bs-toggle="tooltip"]'),
-        );
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-    };
-
     const GliderCreator = () => {
         const gliderConfig3Slides = {
             slidesToShow: 1,
@@ -85,75 +75,6 @@
                 }, 4000);
             });
         });
-    };
-
-    const FilterGallery = () => {
-        const filtroGaleria = document.querySelector('.filter-buttons');
-        const filtroEvento = document.querySelector('.filter-btn');
-        if (
-            document.body.contains(filtroGaleria) ||
-            document.body.contains(filtroEvento)
-        ) {
-            // Filtro de galería (opcional)
-            document.addEventListener('DOMContentLoaded', function () {
-                const filterButtons = document.querySelectorAll('.filter-buttons .btn');
-                const galleryItems = document.querySelectorAll('#gallery-grid .col-md-6');
-
-                filterButtons.forEach((button) => {
-                    button.addEventListener('click', function () {
-                        // Remover clase active de todos los botones
-                        filterButtons.forEach((btn) => btn.classList.remove('active'));
-
-                        // Agregar clase active al botón clickeado
-                        this.classList.add('active');
-
-                        const filterValue = this.getAttribute('data-filter');
-
-                        // Mostrar/ocultar elementos según el filtro
-                        galleryItems.forEach((item) => {
-                            if (
-                                filterValue === 'all' ||
-                                item.getAttribute('data-category') === filterValue
-                            ) {
-                                item.style.display = 'block';
-                            } else {
-                                item.style.display = 'none';
-                            }
-                        });
-                    });
-                });
-            });
-
-            // Filtro de eventos (opcional)
-            document.addEventListener('DOMContentLoaded', function () {
-                const filterButtons = document.querySelectorAll('.filter-btn');
-                const eventCards = document.querySelectorAll('.event-card');
-
-                filterButtons.forEach((button) => {
-                    button.addEventListener('click', function () {
-                        // Remover clase active de todos los botones
-                        filterButtons.forEach((btn) => btn.classList.remove('active'));
-
-                        // Agregar clase active al botón clickeado
-                        this.classList.add('active');
-
-                        const filterValue = this.getAttribute('data-filter');
-
-                        // Mostrar/ocultar elementos según el filtro
-                        eventCards.forEach((card) => {
-                            if (
-                                filterValue === 'all' ||
-                                card.getAttribute('data-category') === filterValue
-                            ) {
-                                card.style.display = 'flex';
-                            } else {
-                                card.style.display = 'none';
-                            }
-                        });
-                    });
-                });
-            });
-        }
     };
 
     const Calendario = () => {
@@ -280,14 +201,87 @@
         }
     };
 
+    const LightBox = () => {
+        const checkGaleria = document.getElementById('lightboxImage');
+        if (document.body.contains(checkGaleria)) {
+            // Seleccionamos tanto las imágenes como los overlays
+            const images = document.querySelectorAll('.gallery-item-image');
+            const overlays = document.querySelectorAll('.gallery-item__overlay');
+            const lightboxImage = document.getElementById('lightboxImage');
+            let currentIndex = 0;
+
+            // Función para actualizar la imagen del lightbox
+            const updateLightboxImage = (index) => {
+                lightboxImage.src = images[index].src;
+                currentIndex = index;
+            };
+
+            // Agregar event listeners a los overlays
+            overlays.forEach((overlay, index) => {
+                overlay.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    updateLightboxImage(index);
+                });
+            });
+
+            // Navegación hacia la derecha
+            document.getElementById('nextBtn').addEventListener('click', () => {
+                if (currentIndex < images.length - 1) {
+                    updateLightboxImage(currentIndex + 1);
+                } else {
+                    updateLightboxImage(0); // Vuelve al inicio si está en la última imagen
+                }
+            });
+
+            // Navegación hacia la izquierda
+            document.getElementById('prevBtn').addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    updateLightboxImage(currentIndex - 1);
+                } else {
+                    updateLightboxImage(images.length - 1); // Vuelve a la última imagen si está en la primera
+                }
+            });
+
+            // También puedes agregar navegación con teclado
+            document.addEventListener('keydown', (e) => {
+                if (document.getElementById('lightboxModal').classList.contains('show')) {
+                    if (e.key === 'ArrowRight') {
+                        document.getElementById('nextBtn').click();
+                    } else if (e.key === 'ArrowLeft') {
+                        document.getElementById('prevBtn').click();
+                    } else if (e.key === 'Escape') {
+                        const modal = bootstrap.Modal.getInstance(
+                            document.getElementById('lightboxModal'),
+                        );
+                        modal.hide();
+                    }
+                }
+            });
+        }
+    };
+
+    const PopUpInfo = () => {
+        const checkPopUp = document.getElementById('PaginaInicio');
+        if (document.body.contains(checkPopUp)) {
+            Swal.fire({
+                imageUrl: 'https://asistescolar.com/cae/images/plantel/30/pw/extra1.jpg',
+                imageAlt: 'Logo colegio',
+                title: 'Bienvenidos',
+                showConfirmButton: false,
+                showCloseButton: true,
+            });
+        }
+    };
+
     /*----- ----- ----- ----- -----
 	# Declaraciones
 	----- ----- ----- ----- -----*/
 
     window.addEventListener('load', () => {
-        Tooltips();
         GliderCreator();
-        Calendario(); // Agregar esta línea
+        Calendario();
+        LightBox();
+        PopUpInfo();
     });
-    FilterGallery();
 })();

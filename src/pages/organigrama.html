@@ -269,6 +269,17 @@
                 <p class="lead">
                     Conoce la estructura organizativa de nuestra institución educativa
                 </p>
+                <nav aria-label="breadcrumb">
+                    <ol
+                        class="breadcrumb justify-content-center mb-0"
+                        style="--bs-breadcrumb-divider-color: #fff"
+                    >
+                        <li class="breadcrumb-item">
+                            <a href="../../index.html" class="link-light">Inicio</a>
+                        </li>
+                        <li class="breadcrumb-item active text-white">Organigrama</li>
+                    </ol>
+                </nav>
             </div>
         </div>
 
@@ -318,137 +329,80 @@
 
                 <div class="col-lg-4">
                     <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Intranet</h5>
-                        </div>
+                        <h5 class="card-header bg-primary text-white">Intranet</h5>
                         <div class="card-body">
-                            <div class="row g-3">
-                                <div class="col-6">
-                                    <a
-                                        href="https://asistescolar.com/cae/plantel/login.php?idp=30"
-                                        target="_blank"
-                                        class="text-decoration-none"
-                                    >
-                                        <div class="card intranet-card text-center p-3">
-                                            <i
-                                                class="fas fa-school fa-2x text-primary mb-2"
-                                            ></i>
-                                            <p class="mb-0 fw-bold">Institución</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6">
-                                    <a
-                                        href="https://asistescolar.com/cae/personal/login.php?idp=30"
-                                        target="_blank"
-                                        class="text-decoration-none"
-                                    >
-                                        <div class="card intranet-card text-center p-3">
-                                            <i
-                                                class="fas fa-user-tie fa-2x text-primary mb-2"
-                                            ></i>
-                                            <p class="mb-0 fw-bold">Personal</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6">
-                                    <a
-                                        href="https://asistescolar.com/cae/representante/login.php?idp=30"
-                                        target="_blank"
-                                        class="text-decoration-none"
-                                    >
-                                        <div class="card intranet-card text-center p-3">
-                                            <i
-                                                class="fas fa-user-friends fa-2x text-primary mb-2"
-                                            ></i>
-                                            <p class="mb-0 fw-bold">Representante</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6">
-                                    <a
-                                        href="https://asistescolar.com/cae/estudiante/login.php?idp=30"
-                                        target="_blank"
-                                        class="text-decoration-none"
-                                    >
-                                        <div class="card intranet-card text-center p-3">
-                                            <i
-                                                class="fas fa-user-graduate fa-2x text-primary mb-2"
-                                            ></i>
-                                            <p class="mb-0 fw-bold">Estudiante</p>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="d-grid gap-1">
+                                <a
+                                    href="https://asistescolar.com/cae/plantel/login.php?idp=30"
+                                    target="_blank"
+                                    class="btn btn-outline-primary w-100 mb-3"
+                                >
+                                    <i class="fas fa-school"></i>
+                                    Institución
+                                </a>
+                                <a
+                                    href="https://asistescolar.com/cae/personal/login.php?idp=30"
+                                    target="_blank"
+                                    class="btn btn-outline-primary w-100 mb-3"
+                                >
+                                    <i class="fas fa-user-tie"></i>
+                                    Personal
+                                </a>
+                                <a
+                                    href="https://asistescolar.com/cae/representante/login.php?idp=30"
+                                    target="_blank"
+                                    class="btn btn-outline-primary w-100 mb-3"
+                                >
+                                    <i class="fas fa-user-friends"></i>
+                                    Representante
+                                </a>
+                                <a
+                                    href="https://asistescolar.com/cae/estudiante/login.php?idp=30"
+                                    target="_blank"
+                                    class="btn btn-outline-primary w-100 mb-3"
+                                >
+                                    <i class="fas fa-user-graduate"></i>
+                                    Estudiante
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Calendario Escolar</h5>
-                        </div>
+                        <h5 class="card-header bg-primary text-white">
+                            Calendario Escolar
+                        </h5>
                         <div class="card-body">
-                            <div class="calendar-container">
-                                <div class="calendar-header">
-                                    <h6 class="mb-0">Octubre 2025</h6>
+                            <div class="calendar">
+                                <div class="calendar__nav">
+                                    <button id="prevBtn">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </button>
+                                    <div class="calendar__titulo" id="monthYear"></div>
+                                    <button id="nextBtn">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
                                 </div>
-                                <div class="calendar-body">
-                                    <div class="calendar-days">
-                                        <div class="calendar-day">L</div>
-                                        <div class="calendar-day">M</div>
-                                        <div class="calendar-day">M</div>
-                                        <div class="calendar-day">J</div>
-                                        <div class="calendar-day">V</div>
-                                        <div class="calendar-day">S</div>
-                                        <div class="calendar-day">D</div>
-                                    </div>
-                                    <div class="calendar-dates">
-                                        <div class="calendar-date other-month">29</div>
-                                        <div class="calendar-date other-month">30</div>
-                                        <div class="calendar-date">1</div>
-                                        <div class="calendar-date">2</div>
-                                        <div class="calendar-date">3</div>
-                                        <div class="calendar-date">4</div>
-                                        <div class="calendar-date">5</div>
-                                        <div class="calendar-date">6</div>
-                                        <div class="calendar-date">7</div>
-                                        <div class="calendar-date">8</div>
-                                        <div class="calendar-date">9</div>
-                                        <div class="calendar-date">10</div>
-                                        <div class="calendar-date">11</div>
-                                        <div class="calendar-date">12</div>
-                                        <div class="calendar-date">13</div>
-                                        <div class="calendar-date">14</div>
-                                        <div class="calendar-date">15</div>
-                                        <div class="calendar-date">16</div>
-                                        <div class="calendar-date">17</div>
-                                        <div class="calendar-date">18</div>
-                                        <div class="calendar-date">19</div>
-                                        <div class="calendar-date">20</div>
-                                        <div class="calendar-date today">21</div>
-                                        <div class="calendar-date">22</div>
-                                        <div class="calendar-date">23</div>
-                                        <div class="calendar-date">24</div>
-                                        <div class="calendar-date">25</div>
-                                        <div class="calendar-date">26</div>
-                                        <div class="calendar-date">27</div>
-                                        <div class="calendar-date">28</div>
-                                        <div class="calendar-date">29</div>
-                                        <div class="calendar-date">30</div>
-                                        <div class="calendar-date">31</div>
-                                        <div class="calendar-date other-month">1</div>
-                                        <div class="calendar-date other-month">2</div>
-                                        <div class="calendar-date other-month">3</div>
-                                    </div>
+                                <div class="calendar__days">
+                                    <div class="calendar__day">Dom</div>
+                                    <div class="calendar__day">Lun</div>
+                                    <div class="calendar__day">Mar</div>
+                                    <div class="calendar__day">Mie</div>
+                                    <div class="calendar__day">Jue</div>
+                                    <div class="calendar__day">Vie</div>
+                                    <div class="calendar__day">Sab</div>
                                 </div>
+                                <div class="calendar__dates" id="dates"></div>
+                                <hr class="calendar__separator" />
+                                <div class="calendar__events" id="eventsContainer"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">SOLICITUD CONSTANCIA</h5>
-                        </div>
+                        <h5 class="card-header bg-primary text-white">
+                            Solicitud de constancia
+                        </h5>
                         <div class="card-body">
                             <a
                                 href="https://asistescolar.com/cae/web/30/p.php?p=813"
@@ -461,9 +415,7 @@
                     </div>
 
                     <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">ADMINISTRACIÓN</h5>
-                        </div>
+                        <h5 class="card-header bg-primary text-white">Administración</h5>
                         <div class="card-body">
                             <a
                                 href="https://www.bcv.org.ve/"
@@ -476,9 +428,9 @@
                     </div>
 
                     <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">SOLICITUD DE CUPO</h5>
-                        </div>
+                        <h5 class="card-header bg-primary text-white">
+                            Solicitud de cupo
+                        </h5>
                         <div class="card-body text-center">
                             <a
                                 href="https://asistescolar.com/cae/representante/view/cursosc.php?idp=30"
@@ -486,7 +438,7 @@
                             >
                                 <img
                                     src="https://asistescolar.com/cae/images/plantel/30/cuadro/2070.png"
-                                    class="img-fluid"
+                                    class="img-fluid image-expand"
                                     alt="Solicitud de Cupo"
                                 />
                             </a>
@@ -494,9 +446,7 @@
                     </div>
 
                     <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Publicaciones</h5>
-                        </div>
+                        <h5 class="card-header bg-primary text-white">Publicaciones</h5>
                         <div class="card-body">
                             <div class="row g-3">
                                 <div class="col-12">
@@ -506,7 +456,7 @@
                                     >
                                         <img
                                             src="https://asistescolar.com/cae/images/plantel/30/cuadro/2458.jpg"
-                                            class="img-fluid rounded"
+                                            class="img-fluid image-expand"
                                             alt="Publicación 1"
                                         />
                                     </a>
@@ -518,7 +468,7 @@
                                     >
                                         <img
                                             src="https://asistescolar.com/cae/images/plantel/30/cuadro/2459.png"
-                                            class="img-fluid rounded"
+                                            class="img-fluid image-expand"
                                             alt="Publicación 2"
                                         />
                                     </a>
@@ -528,9 +478,7 @@
                     </div>
 
                     <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Redes Sociales</h5>
-                        </div>
+                        <h5 class="card-header bg-primary text-white">Redes Sociales</h5>
                         <div class="card-body">
                             <a
                                 href="https://www.instagram.com/sistemas_sae/?hl=es"
@@ -542,10 +490,8 @@
                         </div>
                     </div>
 
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Enlaces</h5>
-                        </div>
+                    <div class="card">
+                        <h5 class="card-header bg-primary text-white">Enlaces</h5>
                         <div class="card-body">
                             <div class="mb-3">
                                 <a
@@ -554,7 +500,7 @@
                                 >
                                     <img
                                         src="https://asistescolar.com/cae/images/plantel/30/cuadro/3220.png"
-                                        class="img-fluid rounded"
+                                        class="img-fluid image-expand"
                                         alt="Enlace 1"
                                     />
                                 </a>
