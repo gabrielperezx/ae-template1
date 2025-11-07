@@ -33,13 +33,27 @@
             const nextButton = container.querySelector('.carousel__siguiente');
             const dots = container.querySelector('.carousel__indicadores');
 
-            new Glider(carousel, {
+            const glider = new Glider(carousel, {
                 ...gliderConfig3Slides,
                 arrows: {
                     prev: prevButton,
                     next: nextButton,
                 },
                 dots: dots,
+            });
+
+            let autoplay = setInterval(() => {
+                glider.scrollItem('next');
+            }, 2000);
+
+            container.addEventListener('mouseenter', () => {
+                clearInterval(autoplay);
+            });
+
+            container.addEventListener('mouseleave', () => {
+                autoplay = setInterval(() => {
+                    glider.scrollItem('next');
+                }, 4000);
             });
         });
 
@@ -267,7 +281,6 @@
             Swal.fire({
                 imageUrl: 'https://asistescolar.com/cae/images/plantel/30/pw/extra1.jpg',
                 imageAlt: 'Logo colegio',
-                title: 'Bienvenidos',
                 showConfirmButton: false,
                 showCloseButton: true,
             });

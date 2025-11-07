@@ -1,3 +1,7 @@
+div:where(.swal2-container) button:where(.swal2-close):focus-visible {
+    box-shadow: none !important;
+}
+
 .image-expand {
     transition: ease all 0.3s;
     &:hover {
