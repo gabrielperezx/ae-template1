@@ -146,7 +146,7 @@
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img
                         src="https://asistescolar.com/cae/images/plantel/30/pw/logo_s.png"
@@ -154,129 +154,149 @@
                         class="me-2"
                     />
                 </a>
-
                 <button
                     class="navbar-toggler"
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarContent"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            Offcanvas
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
 
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
-                        </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                >
+                                    Colegio
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./src/pages/mision-vision.html"
+                                            >Misión y Visión</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="https://www.dropbox.com/scl/fi/szrajdhng163c4ne5svnt/561.pdf?rlkey=emixg8pw8er77j5q69ly7ww4h&dl=1"
+                                            target="_blank"
+                                            >Reseña Histórica</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./src/pages/organigrama.html"
+                                            >Organigrama</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./src/pages/normativa.html"
+                                            >Normativa Interna</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./src/pages/valores.html"
+                                            >Valores</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
 
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                            >
-                                Colegio
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="./src/pages/mision-vision.html"
-                                        >Misión y Visión</a
-                                    >
-                                </li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="https://www.dropbox.com/scl/fi/szrajdhng163c4ne5svnt/561.pdf?rlkey=emixg8pw8er77j5q69ly7ww4h&dl=1"
-                                        target="_blank"
-                                        >Reseña Histórica</a
-                                    >
-                                </li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="./src/pages/organigrama.html"
-                                        >Organigrama</a
-                                    >
-                                </li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="./src/pages/normativa.html"
-                                        >Normativa Interna</a
-                                    >
-                                </li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="./src/pages/valores.html"
-                                        >Valores</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                >
+                                    Publicaciones
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./src/pages/blog.html"
+                                            >Cartelera Informativa</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./src/pages/horarios.html"
+                                            >Horarios Escolares</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./src/pages/utiles.html"
+                                            >Útiles Escolares</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./src/pages/eventos.html"
+                                            >Eventos</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
 
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                            >
-                                Publicaciones
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="./src/pages/blog.html"
-                                        >Cartelera Informativa</a
-                                    >
-                                </li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="./src/pages/horarios.html"
-                                        >Horarios Escolares</a
-                                    >
-                                </li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="./src/pages/utiles.html"
-                                        >Útiles Escolares</a
-                                    >
-                                </li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li>
-                                    <a
-                                        class="dropdown-item"
-                                        href="./src/pages/eventos.html"
-                                        >Eventos</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./src/pages/galeria.html"
+                                    >Galería</a
+                                >
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="./src/pages/galeria.html"
-                                >Galería</a
-                            >
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="./src/pages/contacto.html"
-                                >Contáctanos</a
-                            >
-                        </li>
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./src/pages/contacto.html"
+                                    >Contáctanos</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
